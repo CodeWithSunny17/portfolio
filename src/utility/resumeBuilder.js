@@ -1,54 +1,54 @@
 const { REACT_APP_RESUME_DRIVE_ID } = process.env;
 export const resume = {
-  name: 'Hritik Singh',
-  email: 'hritiks127@gmail.com',
-  Phone: '+918920255828',
-  address: 'Ghaziabad, Delhi NCR, India',
+  name: 'Sunny Kumar',
+  email: 'sunny274.kr@gmail.com',
+  Phone: '+916283654856',
+  address: 'Noida, UP, India',
   resumeDriveLinkCode:
-    REACT_APP_RESUME_DRIVE_ID ?? '1Aou8wDfROpJoqG4k6WQdlV2T5zfnUa1x',
+    REACT_APP_RESUME_DRIVE_ID ?? '1vRTItmiLjW8Y_0B7vi87pDCgxWP530XF',
   dob: {
-    month: 'November',
-    year: '1999',
-    date: 13,
+    month: 'December',
+    year: '1997',
+    date: 17,
   },
   links: {
-    github: 'https://github.com/hritiksingh13',
-    facebook: 'https://www.facebook.com/hritik.singh.3597',
-    linkedIn: 'https://www.linkedin.com/in/hritikk-singh',
-    instagram: '',
+    github: 'https://github.com/CodeWithSunny17',
+    facebook: 'https://www.facebook.com',
+    linkedIn: 'https://www.linkedin.com/in/sunny-kumar-b1976b146',
+    instagram: 'https://www.instagram.com/maisunnyhu',
   },
-  headline: 'A Fullstack Web Developer',
-  jobName: 'Web Developer',
-  bio: 'Experienced Full Stack Developer skilled in crafting captivating web experiences with HTML, CSS, JavaScript, React JS, Node.js, Express.js, C#, and ASP .NET. Seamlessly blending frontend design and robust backend development for diverse web solutions.',
+  headline: 'A Frontend Web Developer',
+  jobName: 'React Developer',
+  bio: 'Experienced Frontend Developer skilled in crafting captivating web experiences with HTML, CSS, JavaScript, Typescript, React JS, Node.js, Express.js. Seamlessly blending frontend design for diverse web solutions.',
   //description must be less than or equal to 100 characters
   education: [
     {
-      year: '2018 - 2022',
-      name: "Bachelor's Degree in CS",
-      affiliation: 'Abdul Kalam Technical University',
+      year: '2016 - 2020',
+      name: "Bachelor's Degree",
+      affiliation: 'Lovely Professional University',
       description:
-        'Catalyst for technical proficiency and problem-solving acumen.',
+        'Transforming Education Transforming India',
     },
     {
-      year: '2021 - 2021',
+      year: '2023 - 2023',
       name: 'Web Development Bootcamp',
       affiliation: 'Udemy',
       description:
         'Comprehensive training fostering strong coding abilities and practical web development skills.',
     },
-    {
-      year: '2023 - 2023',
-      name: 'Pesto Plus Fellowship',
-      affiliation: 'Pesto Tech',
-      description:
-        '8-month program shapes devs into global engineers, prioritizes skill, boosts income.',
-    },
+    // {
+    //   year: '2023 - 2023',
+    //   name: 'Pesto Plus Fellowship',
+    //   affiliation: 'Pesto Tech',
+    //   description:
+    //     '8-month program shapes devs into global engineers, prioritizes skill, boosts income.',
+    // },
   ],
   //description must be less than or equal to 100 characters
   experience: [
     {
       year: '2022 - Present',
-      name: 'MAQ Software',
+      name: 'Infosys Limited',
       affiliation: 'IT Company',
       description: '',
     },
@@ -69,11 +69,11 @@ export const resume = {
       },
       {
         name: 'Redux',
-        score: 95,
+        score: 90,
       },
       {
         name: 'SQL & PostgreSQL',
-        score: 80,
+        score: 85,
       },
     ],
     secondary: [
@@ -83,15 +83,11 @@ export const resume = {
       },
       {
         name: 'Node & Express JS',
-        score: 70,
-      },
-      {
-        name: '.NET',
-        score: 80,
+        score: 60,
       },
       {
         name: 'MongoDB',
-        score: 70,
+        score: 60,
       },
       {
         name: 'PowerShell & Bicep Scripts',
@@ -104,7 +100,6 @@ export const resume = {
     'Visual Studio Code',
     'GIT',
     'GitHub',
-    'Azure DevOps',
     'JiRa',
   ],
   projects: [

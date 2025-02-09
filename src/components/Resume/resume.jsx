@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from 'react';
-import './resume.css';
-import { resume } from '../../utility/resumeBuilder';
+import React, { useEffect, useState } from "react";
+import "./resume.css";
+import { resume } from "../../utility/resumeBuilder";
 
 const Resume = ({ reference }) => {
   const [isVisible, setVisible] = useState(false);
@@ -20,13 +20,13 @@ const Resume = ({ reference }) => {
   }, []);
 
   return (
-    <section ref={reference} className={isVisible ? ' is-visible' : ''}>
-      <div className='p-6 mt-10'>
-        <div className='container mx-auto flex flex-col text-center relative 2xl:mb-10'>
-          <h1 className='mirror right-0'>Resume</h1>
-          <h1 className='header text-5xl pt-4 mb-6'>Resume</h1>
+    <section ref={reference} className={isVisible ? " is-visible" : ""}>
+      <div className="p-6 mt-10">
+        <div className="container mx-auto flex flex-col text-center relative 2xl:mb-10">
+          <h1 className="mirror right-0">Resume</h1>
+          <h1 className="header text-5xl pt-4 mb-6">Resume</h1>
         </div>
-        <p className='text-center mt-6'>{resume.bio}</p>
+        <p className="text-center mt-6">{resume.bio}</p>
         <div
           className={`flex justify-center mx-auto max-w-md flex-wrap md:max-w-full`}
         >
@@ -45,13 +45,13 @@ const Resume = ({ reference }) => {
               {experienceHoverIndex !== index ? (
                 <>
                   <span>{details.year}</span>
-                  <h2 className='mb-4'>{details.name}</h2>
-                  <p className='text-xs font-semibold uppercase tracking-widest'>
+                  <h2 className="mb-4">{details.name}</h2>
+                  <p className="text-xs font-semibold uppercase tracking-widest">
                     {details.affiliation}
                   </p>
                 </>
               ) : (
-                <div class='max-h-44 overflow-hidden text-ellipsis animate-[opacity_1s_ease-in-out_1]'>
+                <div class="max-h-44 overflow-hidden text-ellipsis animate-[opacity_1s_ease-in-out_1]">
                   {details.description}
                 </div>
               )}
@@ -76,13 +76,13 @@ const Resume = ({ reference }) => {
               {educationHoverIndex !== index ? (
                 <>
                   <span>{details.year}</span>
-                  <h2 className='mb-4'>{details.name}</h2>
-                  <p className='text-xs font-semibold uppercase tracking-widest'>
+                  <h2 className="mb-4">{details.name}</h2>
+                  <p className="text-xs font-semibold uppercase tracking-widest">
                     {details.affiliation}
                   </p>
                 </>
               ) : (
-                <div class='max-h-44 overflow-hidden text-ellipsis animate-[opacity_1s_ease-in-out_1]'>
+                <div class="max-h-44 overflow-hidden text-ellipsis animate-[opacity_1s_ease-in-out_1]">
                   {details.description}
                 </div>
               )}
@@ -90,11 +90,11 @@ const Resume = ({ reference }) => {
           ))}
         </div>
       </div>
-      <div className='flex justify-center'>
+      <div className="flex justify-center">
         <a
-          href={`https://drive.google.com/uc?id=${resume.resumeDriveLinkCode}&export=download`}
+          href={`https://drive.google.com/uc?export=download&id=${resume.resumeDriveLinkCode}`}
         >
-          <button className='btn btn-primary py-4 px-5'>DOWNLOAD CV</button>
+          <button className="btn btn-primary py-4 px-5">DOWNLOAD CV</button>
         </a>
       </div>
     </section>
