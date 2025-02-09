@@ -104,12 +104,12 @@ export const resume = {
   ],
   projects: [
     {
-      name: 'EmbedFAST',
-      link: 'https://maqsoftware.com/embedfast',
+      name: 'Event Manager App',
+      link: 'managemyevent.netlify.app',
     },
     {
-      name: 'Car Bazaar',
-      link: 'https://carbazaar-node.netlify.app/',
+      name: 'ViteTube',
+      link: 'vitetube.netlify.app',
     },
     {
       name: 'Clock App',
