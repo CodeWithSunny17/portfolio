@@ -105,11 +105,11 @@ export const resume = {
   projects: [
     {
       name: 'Event Manager App',
-      link: 'managemyevent.netlify.app',
+      link: 'https://managemyevent.netlify.app',
     },
     {
       name: 'ViteTube',
-      link: 'vitetube.netlify.app',
+      link: 'https://vitetube.netlify.app',
     },
     {
       name: 'Clock App',
