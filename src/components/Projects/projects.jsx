@@ -1,7 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import React, { useEffect, useState } from 'react';
-import './projects.css';
-import { resume } from '../../utility/resumeBuilder';
+import React, { useEffect, useState } from "react";
+import "./projects.css";
+import { resume } from "../../utility/resumeBuilder";
 
 const Projects = ({ reference }) => {
   const [isVisible, setVisible] = useState(false);
@@ -18,11 +18,11 @@ const Projects = ({ reference }) => {
   }, []);
 
   return (
-    <section ref={reference} className={isVisible ? ' is-visible' : ''}>
-      <div className='p-6 mt-10'>
-        <div className='container mx-auto flex flex-col text-center relative 2xl:mb-10'>
-          <h1 className='mirror right-0'>My Projects</h1>
-          <h1 className='header text-5xl pt-4 mb-6'>My Projects</h1>
+    <section ref={reference} className={isVisible ? "is-visible" : ""}>
+      <div className="p-6 mt-10">
+        <div className="container mx-auto flex flex-col text-center relative 2xl:mb-10">
+          <h1 className="mirror right-0">My Projects</h1>
+          <h1 className="header text-5xl pt-4 mb-6">My Projects</h1>
         </div>
         <div
           className={`flex justify-center pt-10 mx-auto max-w-md flex-wrap md:flex-nowrap md:max-w-full`}
@@ -30,13 +30,13 @@ const Projects = ({ reference }) => {
           {resume.projects.map((details) => (
             <a
               href={details.link}
-              target='_blank'
+              target="_blank"
               className={`project-div project-card text-center ${
-                resume.projects.length === 1 ? 'w-full' : 'w-full md:w-96'
+                resume.projects.length === 1 ? "w-full" : "w-full md:w-96"
               }`}
-              rel='noreferrer'
+              rel="noreferrer"
             >
-              <h3 className=''>{details.name}</h3>
+              <h3 className="">{details.name}</h3>
             </a>
           ))}
         </div>

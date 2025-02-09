@@ -20,13 +20,13 @@ const Resume = ({ reference }) => {
   }, []);
 
   return (
-    <section ref={reference} className={isVisible ? " is-visible" : ""}>
+    <section ref={reference} className={isVisible ? "is-visible" : ""}>
       <div className="p-6 mt-10">
         <div className="container mx-auto flex flex-col text-center relative 2xl:mb-10">
           <h1 className="mirror right-0">Resume</h1>
           <h1 className="header text-5xl pt-4 mb-6">Resume</h1>
         </div>
-        <p className="text-center mt-6">{resume.bio}</p>
+        <p className="text-center">{resume.bio}</p>
         <div
           className={`flex justify-center mx-auto max-w-md flex-wrap md:max-w-full`}
         >
