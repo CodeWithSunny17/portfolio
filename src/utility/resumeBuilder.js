@@ -112,8 +112,8 @@ export const resume = {
       link: 'https://vitetube.netlify.app',
     },
     {
-      name: 'Clock App',
-      link: 'https://cpgy2o.csb.app/',
+      name: 'Notify App',
+      link: 'https://noteifie.netlify.app',
     },
     {
       name: 'Link Shortner',
